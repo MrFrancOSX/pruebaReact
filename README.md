@@ -6,6 +6,5 @@ Puntos que incluye esta prueba "E-Commerce Robot"
 - Se puede Editar y Eliminar los productos.
 - Los productos tienen Fotos y las puedes agregar mediante URL
 - Se pueden Crear los Productos por : Nombre, descripción, URL Imagen, Precio y Etiqueta
-- Además, se debe poder buscar por categoría.
 - Hoja de Estilos Propia en SASS especial para el proyecto.
 - Es Responsive
