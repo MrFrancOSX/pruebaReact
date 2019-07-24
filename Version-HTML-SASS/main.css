@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Proza+Libre&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 130px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Proza Libre", sans-serif;
+  font-weight: 700;
+}
+
+header {
+  background: #fff;
+  top: 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  padding: 15px 0px;
+  border-bottom: 1px solid #f1f1f1;
+  z-index: 9999;
+}
+header span a {
+  color: #f44336;
+  text-decoration: none;
+}
+header span a:hover {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+input {
+  padding: 15px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #666;
+}
+
+section.searcher {
+  margin-bottom: 20px;
+}
+section.searcher .add-or-edit h2 {
+  font-size: 18px;
+}
+section.searcher .add-or-edit input {
+  display: inline-block;
+  margin-top: 8px;
+  width: 180px;
+}
+section.searcher .add-or-edit button {
+  padding: 15px 20px;
+  border-radius: 4px;
+  outline: none;
+  margin-top: 8px;
+  background: #f44335;
+  border: none;
+  color: white;
+  font-weight: 600;
+  -webkit-transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+section.searcher .add-or-edit button:hover {
+  background: #b9000b;
+}
+section.searcher .finder h2 {
+  font-size: 24px;
+}
+section.searcher .finder input {
+  width: 100%;
+}
+section.products {
+  text-align: center;
+}
+section.products .grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
+  padding: 1rem;
+  width: 100%;
+}
+section.products .grid:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+section.products .grid .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
+  padding: 15px 0px 30px 0px;
+  -webkit-transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+@media (max-width: 991px) {
+  section.products .grid .grid-item {
+    display: block;
+  }
+}
+section.products .grid .grid-item:hover {
+  border-color: #ccc;
+}
+section.products .grid .grid-item img {
+  max-width: 250px;
+  object-fit: contain;
+}
+section.products .grid .grid-item h2 {
+  font-size: 24px;
+}
+section.products .grid .grid-item h3 {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+}
+section.products .grid .grid-item .price {
+  font-size: 14px;
+}
+section.products .grid .grid-item .price span {
+  color: #b9000b;
+  font-weight: 600;
+  font-size: 18px;
+}
+section.products .grid .grid-item .edit {
+  margin-top: 10px;
+}
+section.products .grid .grid-item .edit button {
+  padding: 5px 10px;
+  border: 1px solid #666;
+  background: #fff;
+  border-radius: 4px;
+  outline: none;
+  -webkit-transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+section.products .grid .grid-item .edit button:hover:first-child {
+  background: #f44335;
+  color: #fff;
+}
+section.products .grid .grid-item .edit button:hover:last-child {
+  background: #8eacbb;
+  color: #000;
+}
+
+footer {
+  padding: 15px 0px;
+  text-align: center;
+  background: #b9000b;
+  color: #fff;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #f44335;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+

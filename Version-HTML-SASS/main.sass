@@ -1,0 +1,167 @@
+// Created by @francoromani
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Proza+Libre&display=swap')
+
+$primary-color: #f44335
+$light-color: #f44335
+$dark-color: #b9000b
+
+$tablet-big: 991px
+
+@mixin transition($a)
+	-webkit-transition: all $a linear
+	-moz-transition: all $a linear
+	-ms-transition: all $a linear
+	-o-transition: all $a linear
+	transition: all $a linear
+
+*
+	box-sizing: border-box
+	padding: 0
+	margin: 0
+body
+	height: 100%
+	width: 100%
+	font-family: 'Open Sans', sans-serif
+	padding-top: 130px
+h1,h2,h3,h4,h5,h6
+	font-family: 'Proza Libre', sans-serif
+	font-weight: 700
+header
+	background: #fff
+	top: 0
+	text-align: center
+	position: fixed
+	width: 100%
+	padding: 15px 0px
+	border-bottom: 1px solid #f1f1f1
+	z-index: 9999
+	span a
+		color: #f44336
+		text-decoration: none
+		&:hover
+			text-decoration: none
+
+main
+	padding-top: 25px
+	padding-bottom: 25px
+input
+	padding: 15px 20px
+	border-radius: 4px
+	outline: none
+	border: 1px solid #666
+section
+	&.searcher
+		margin-bottom: 20px
+		.add-or-edit
+			h2
+				font-size: 18px
+			input
+				display: inline-block
+				margin-top: 8px
+				width: 180px
+			button
+				padding: 15px 20px
+				border-radius: 4px
+				outline: none
+				margin-top: 8px
+				background: $primary-color
+				border: none
+				color: white
+				font-weight: 600
+				@include transition(150ms)
+				&:hover
+					background: $dark-color
+
+		.finder
+			h2
+				font-size: 24px
+			input
+				width: 100%
+	&.products
+		text-align: center	
+		.grid
+			display: grid
+			grid-gap: 1rem
+			grid-auto-flow: dense
+			padding: 1rem
+			width: 100%
+			&:after
+				content: ''
+				display: block
+				clear: both
+			.grid-item
+				display: flex
+				@media (max-width: $tablet-big)
+					display: block
+				align-items: center
+				justify-content: center
+				border-bottom: 1px solid #f1f1f1
+				border-top: 1px solid #f1f1f1
+				padding: 15px 0px 30px 0px
+				@include transition(150ms)
+				&:hover
+					border-color: #ccc
+				img
+					max-width: 250px
+					object-fit: contain
+				h2
+					font-size: 24px
+				h3
+					font-size: 16px
+					font-weight: normal
+					font-family: 'Open Sans', sans-serif
+				.price
+					font-size: 14px
+					span
+						color: $dark-color
+						font-weight: 600
+						font-size: 18px
+				.edit
+					margin-top: 10px
+					button
+						padding: 5px 10px
+						border: 1px solid #666
+						background: #fff
+						border-radius: 4px
+						outline: none
+						@include transition (150ms)
+						&:hover
+							&:first-child
+								background: $light-color
+								color: #fff
+							&:last-child
+								background: #8eacbb
+								color: #000
+
+footer
+	padding: 15px 0px
+	text-align: center
+	background: $dark-color
+	color: #fff
+	a
+		text-decoration: none
+		color: #fff
+		font-weight: 600
+		&:hover
+			text-decoration: none
+			color: $light-color
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
